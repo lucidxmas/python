@@ -1,0 +1,25 @@
+import random
+
+n1 = random.randrange(1, 46)
+
+n2 = random.randrange(1, 46)
+while n1 == n2:
+    n2 = random.randrange(1, 46)
+
+n3 = random.randrange(1, 46)
+while n1 == n3 or n2 == n3:
+    n3 = random.randrange(1, 46)
+
+n4 = random.randrange(1, 46)
+while n1 == n4 or n2 == n4 or n3 == n4:
+    n4 = random.randrange(1, 46)
+
+n5 = random.randrange(1, 46)
+while n1 == n5 or n2 == n5 or n3 == n5 or n4 == n5:
+    n5 = random.randrange(1, 46)
+
+n6 = random.randrange(1, 46)
+while n1 == n6 or n2 == n6 or n3 == n6 or n4 == n6 or n5 == n6:
+    n6 = random.randrange(1, 46)
+    
+print(n1, n2, n3, n4, n5, n6)
